@@ -16,3 +16,11 @@ In location a, we assign an integer(-7) and in x the address of a variable of ty
 We assign the address of a to location: x;<br>
 Location x points to (refer to, had the address of) variable a;<br>
 <br>
+[2Swap.c](https://github.com/Mira-Qiu/Tutorial-for-language-C/blob/master/2Swap.c)<br>
+swap the address of x and y<br>
+<br>
+Arrays in C are pointers. When we declare a variable of type array like:
+```c
+int x[5];
+```
+The compiler allocates consecutive locations and put the address of the first element of the array into the variable.<br>
