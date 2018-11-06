@@ -19,6 +19,7 @@ Location x points to (refer to, had the address of) variable a;<br>
 [2Swap.c](https://github.com/Mira-Qiu/Tutorial-for-language-C/blob/master/2Swap.c)<br>
 swap the address of x and y<br>
 <br>
+[3Arrays.c](https://github.com/Mira-Qiu/Tutorial-for-language-C/blob/master/3Arrays.c)<br>
 Arrays in C are pointers. When we declare a variable of type array like:
 ```c
 int x[5];
