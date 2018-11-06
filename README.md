@@ -25,3 +25,9 @@ Arrays in C are pointers. When we declare a variable of type array like:
 int x[5];
 ```
 The compiler allocates consecutive locations and put the address of the first element of the array into the variable.<br>
+<br>
+[4StructLinkedList.c](https://github.com/Mira-Qiu/Tutorial-for-language-C/blob/master/4StructLinkedList.c)<br>
+newNode = (Rec*)malloc(sizeof(Rec)): create a second node in memory and makes newNode points to it.<br>
+newNode -> key = i: inserts the value of i into the location of the key and newNode is pointing to it<br>
+<br>
+
