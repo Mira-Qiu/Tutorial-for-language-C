@@ -36,4 +36,7 @@ The compiler allocates consecutive locations and put the address of the first el
 <br>
 **void func(void (*f)())** informs the compliter that there is a function func that has one parameter f which is a function.<br>
 (*f)() is in the body of function func is call of function f. This means deference from pointer f to the body to the body of the function f and excute its body.
-<br>
+<br><br><br>
+[Printdiamond.c](https://github.com/Mira-Qiu/Tutorial-for-language-C/blob/master/PrintDiamond.c)<br>
+<li> k to control how many * print out</li>
+<li> count control how man space print out</li>
