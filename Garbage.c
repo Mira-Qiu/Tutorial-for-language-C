@@ -24,5 +24,5 @@ int main()
 
 /* The output of this program is:
 *  -12
-*  -12
+*  -12 
 */
