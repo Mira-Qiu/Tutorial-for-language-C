@@ -1,0 +1,6 @@
+mark1 : newNode = (Rec*)malloc(sizeof(Rec)):right hand side allocates space with the size of struct and return its address;
+newNode->key =i: newNode dereferences, access the location of key and insert value of i;
+newNode->next ->head: newNode dereferences, access the location of next and insert value of head;
+head = newNode: Insert the connent of newNode to the location head; Therefore newNode and head points to the same location;
+newNode =(Rec*)malloc(sizeof(Rec)): creates a second node in memory and makes newNode points to it;
+newNode->key =i: insert the value of i into the location of the variable key that newNode is pointing to it;
