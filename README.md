@@ -32,3 +32,8 @@ The compiler allocates consecutive locations and put the address of the first el
 **newNode -> key = i**: inserts the value of i into the location of the key and newNode is pointing to it<br>
 <br>
 
+[NoparameterFunc.c](https://github.com/Mira-Qiu/Tutorial-for-language-C/blob/master/NoParameterFunc.c)
+<br>
+**void func(void (*f)())** informs the compliter that there is a function func that has one parameter f which is a function.<br>
+(*f)() is in the body of function func is call of function f. This means deference from pointer f to the body to the body of the function f and excute its body.
+<br>
