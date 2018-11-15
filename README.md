@@ -40,3 +40,7 @@ The compiler allocates consecutive locations and put the address of the first el
 [Printdiamond.c](https://github.com/Mira-Qiu/Tutorial-for-language-C/blob/master/PrintDiamond.c)<br>
 <li> k to control how many * print out</li>
 <li> count control how man space print out</li>
+<br>
+Void* a → can point to any kind of element<br>
+Int* a → can only point to a integer.<br>
+
