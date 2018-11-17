@@ -44,3 +44,8 @@ The compiler allocates consecutive locations and put the address of the first el
 Void* a → can point to any kind of element<br>
 Int* a → can only point to a integer.<br>
 
+<strong> Every variable has a location in memory.</strong>
+```c
+int x;
+```
+Tells compiler I need a location in memory labeled x and I am planning to put an integer in this location.<br><br>
