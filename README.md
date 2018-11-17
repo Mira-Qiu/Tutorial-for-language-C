@@ -58,7 +58,7 @@ we <strong>must</strong> write the <strong>address_of_variable</strong></br>
 <ul><li>Variable: we mean the connent of the location of the variable;</li>
 <li>&variable: we mean the address of the variable's location in memory</li></ul>
 
-<strong>scanf</Strong> only reads the first word. <Strong>gets</strong> reads a line input.<br>
+<strong>scanf</Strong> only reads the first word. <Strong>gets</strong> reads a line input._*only reads a line of **characters(String)***_<br>
 ```c
 char a[100];
 ```
