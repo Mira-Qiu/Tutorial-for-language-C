@@ -42,10 +42,18 @@ The compiler allocates consecutive locations and put the address of the first el
 <li> count control how man space print out</li>
 <br>
 Void* a → can point to any kind of element<br>
-Int* a → can only point to a integer.<br>
+Int* a → can only point to a integer.<br><br>
 
 <strong> Every variable has a location in memory.</strong>
 ```c
 int x;
 ```
 Tells compiler I need a location in memory labeled x and I am planning to put an integer in this location.<br><br>
+```c
+scanf("Control String",address_of_variable, address_of_variable,....,address_of_variable)
+```
+scanf : <strong>scan</strong> the input stream <strong>formatted</strong></br>
+control String: directs the system how to convert the data-value: integer, floating point number or character, etc.<br><br>
+we <strong>must</strong> write the <strong>address_of_variable</strong></br>
+<ul><li>Variable: we mean the connent of the location of the variable;</li>
+<li>&variable: we mean the address of the variable's location in memory</li></ul>
