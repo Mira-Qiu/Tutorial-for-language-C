@@ -65,3 +65,9 @@ char a[100];
 This is how we declare an <strong>array</strong>.<br>
 Note that I did not use &a because this variable is an array variable. __**For variable of simple type(like int, float, char) we must use &**__.<br>
 [scanf example](https://github.com/Mira-Qiu/Tutorial-for-language-C/blob/master/scanfExample.c)<br>
+
+```c
+FILE *myfile;
+myFile = fopen("a.txt","r");
+fclose(myfile);
+fprintf(file-name,"Control String",expresion,expresion,...expresion);
