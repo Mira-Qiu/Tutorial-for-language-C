@@ -34,3 +34,42 @@ int main()
 	fclose(infile);
 	return 0;
 }
+
+
+/*
+* update edition
+*/
+
+#include<stdio.h>
+
+int main()
+{
+	int x,b,i,n, sum,enternumber;
+	float avg;
+	FILE *infile;
+	int a[1000];
+	
+	printf("Enter a number: \n");
+	scanf("%d",&enternumber);
+	
+	infile = fopen("a","r");
+	b = fscanf(infile,"%d",&x);
+	while(b != -1)
+	{
+		a[n] = x;
+		b = fscanf(infile,"%d",&x);
+		n++;
+		sum += x;
+	}
+
+	avg = sum/(n -1);
+	
+	for( i = n - 1 ; i >0; i--)
+	{
+		a[i] > avg ? printf("%d : Above the average.\n",a[i]) : a[i] == avg? printf("%d : same as average.\n",a[i]) :printf("%d : Below the average.\n",a[i]);
+	}
+		
+	fclose(infile);
+	printf("\n");
+	return 0;
+}
