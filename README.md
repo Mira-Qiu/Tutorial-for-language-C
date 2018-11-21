@@ -71,3 +71,7 @@ FILE *myfile;
 myFile = fopen("a.txt","r");
 fclose(myfile);
 fprintf(file-name,"Control String",expresion,expresion,...expresion);
+```
+**Function with parameters**<br>
+At the time of a call of a function the system **allocates locations for the parameters and local variables(if any)**. The arguments(expressions) of the call are evaluated. **The value of each argument is copied in to the location** of its corresponding parameters( the first value to the location of the first parameters and the first second to the location of the second parameters,etc). After this the body of the function is executed. Once the execution of the body is completed those locations of the parameters and local variables are **de-allocated(removed)** and the control of execution goes back to the caller.<br><br>
+
