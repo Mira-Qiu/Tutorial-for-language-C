@@ -28,7 +28,7 @@ int main()
  
  /*
  * a & b accept address. The call passes the address of x into a and the address of y into b
- * 
+ * *b = temp means insert the value of temp and insert this number in the location that b is dereferenced to it.
  */
 
 #include <stdio.h>
@@ -59,6 +59,7 @@ void swap(int a, int b)
 * x = 2, y = 3
 * The content of variable x and y after swap
 * x = 2, y = 3
+* 
 * /
   
 
