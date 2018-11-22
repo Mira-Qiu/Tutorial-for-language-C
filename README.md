@@ -75,3 +75,6 @@ fprintf(file-name,"Control String",expresion,expresion,...expresion);
 **Function with parameters**<br>
 At the time of a call of a function the system **allocates locations for the parameters and local variables(if any)**. The arguments(expressions) of the call are evaluated. **The value of each argument is copied in to the location** of its corresponding parameters( the first value to the location of the first parameters and the first second to the location of the second parameters,etc). After this the body of the function is executed. Once the execution of the body is completed those locations of the parameters and local variables are **de-allocated(removed)** and the control of execution goes back to the caller.<br><br>
 
+[GuessingNumber.c](https://github.com/Mira-Qiu/Tutorial-for-language-C/blob/master/GuessNumber.c)<br>
+<li><strong>srand((unsigned)time(NULL))</strong>: The function srand is called seeds. We need to call this fuction to get different seed on every execution of the program. This is accomplished if we pass the current time:(unsigned)time(NULL) to the function.</li>
+<li><strong>rand() </strong> generates a random positive (or zero) integer. We obtain the remainder of this integer by 101. The remainder of 101 is a number between 0 and 100.</li>
