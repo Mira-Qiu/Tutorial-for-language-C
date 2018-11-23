@@ -58,8 +58,9 @@ void swap(int a, int b)
 * The content of variable x and y before swap
 * x = 2, y = 3
 * The content of variable x and y after swap
-* x = 2, y = 3
-* 
+* a = 3, b = 2
+* pass the value of x goes to the location of parameter a, 3 to b. After execution, we have 3 in a and 2 in b.
+* The problem is that that content of x remains 2 and y remains 3.
 * /
   
 
