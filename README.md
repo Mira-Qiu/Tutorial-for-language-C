@@ -78,3 +78,7 @@ At the time of a call of a function the system **allocates locations for the par
 [GuessingNumber.c](https://github.com/Mira-Qiu/Tutorial-for-language-C/blob/master/GuessNumber.c)<br>
 <li><strong>srand((unsigned)time(NULL))</strong>: The function srand is called seeds. We need to call this fuction to get different seed on every execution of the program. This is accomplished if we pass the current time:(unsigned)time(NULL) to the function.</li>
 <li><strong>rand() </strong> generates a random positive (or zero) integer. We obtain the remainder of this integer by 101. The remainder of 101 is a number between 0 and 100.</li>
+
+<br><br>
+<li><strong> Memory leaks</strong>: Space is allocated in heap but no variable points to it.</li>
+<li><strong> Garbage Collection</strong>: when these useless locations are too many then a program called garbage colletion collect all of these useless locations and put them together as free space to be used by the program.</li>
