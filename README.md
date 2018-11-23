@@ -106,3 +106,7 @@ int main(void){
   return 0;
 }
 ```
+<strong> va_list ap</strong>:声明变量ap走过列参数。 The built-in type: va_list is silimar to pointer.<br>
+<strong> va_start(ap,arg)</strong>:使变量去指向第一个参数 makses the variable to point to the first argument.<br>
+**va_arg(ap, int)** :picks up the content of a memory location with the size of int.取出一个int内存地址。<br>
+**va_end(ap)**: ap 与内存地址取消联系。 It is like we write m = NULL for the pointer variable m.<br>
