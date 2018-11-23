@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include<stdarg.h>
+#include <stdlib.h>
+//Remove all the warning errors. Otherwise you will be in trouble.
+void func(void (f)(), ...)
+{
+  va_list ap;
+  long pp[50];
+  int i = 0;
+  va_start(ap, f);
+  for (i = 0; i < 50; i++)
+    pp[i] = va_arg(ap, long);
+  va_end(ap);
+  f(
+   pp[0], pp[1],pp[2],pp[3],pp[4],pp[5],pp[6],pp[7],pp[8],pp[9],
+    pp[10],pp[11],pp[12],pp[13],pp[14],pp[15],pp[16],pp[17],pp[18],pp[19],
+    pp[20],pp[21],pp[22],pp[23],pp[24],pp[25],pp[26],pp[27],pp[28],pp[29],
+    pp[30],pp[31],pp[32],pp[33],pp[34],pp[35],pp[36],pp[37],pp[38],pp[39],
+    pp[40],pp[41],pp[42],pp[43],pp[44],pp[45],pp[46],pp[47],pp[48],pp[49]
+  );
+}
+
+void f(int* s)
+{
+  *s = *s + 10;
+}
+
+void g(int x, int y)
+{
+   printf("%d\n", x + y);
+}
+
+void h()
+{
+  printf("Hello World.\n");
+}
+
+int main()
+{
+  int* s;
+  s = (int *)malloc(sizeof(int));
+  func(g, 2, 3);
+  s[0] = -555;
+  func(f, s);
+  printf("%d\n", s[0]);
+  func(f, s);
+  printf("%d\n", s[0]);
+  func(h);
+  return 0;
+}
+
+//The function: func has a maximum of 50 of parameters. 
+//But the first parameter is a function f and the rest of the parameters are treated as the parameters of: f
+
+/*
+*Question: In the method main we have less than 49 arguments for the function: func. Does this cause any problem?
+*Answer: No. Its does not cause any problem. The compiler from the call: func knows how many pp’s should pick up. 
+*For example for the call: func(g, 2, 3) the compiler picks up 2 for pp[0], and 3 for pp[1].
+*/
