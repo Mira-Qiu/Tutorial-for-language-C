@@ -36,6 +36,7 @@ The compiler allocates consecutive locations and put the address of the first el
 <br>
 **void func(void (*f)())** informs the compliter that there is a function func that has one parameter f which is a function.<br>
 (*f)() is in the body of function func is call of function f. This means deference from pointer f to the body to the body of the function f and excute its body.
+
 <br><br><br>
 [Printdiamond.c](https://github.com/Mira-Qiu/Tutorial-for-language-C/blob/master/PrintDiamond.c)<br>
 <li> k to control how many * print out</li>
@@ -81,4 +82,27 @@ At the time of a call of a function the system **allocates locations for the par
 
 <br><br>
 <li><strong> Memory leaks</strong>: Space is allocated in heap but no variable points to it.</li>
-<li><strong> Garbage Collection</strong>: when these useless locations are too many then a program called garbage colletion collect all of these useless locations and put them together as free space to be used by the program.</li>
+<li><strong> Garbage Collection</strong>: when these useless locations are too many then a program called garbage colletion collect all of these useless locations and put them together as free space to be used by the program.</li><br><br>
+
+```c
+#include <stdio.h>
+#include <stdarg.h>
+
+void print(int arg, ...){
+  va_list ap;
+  int i;
+  va_start(ap, arg); 
+  for (i = arg; i >= 0; i = va_arg(ap, int))
+    printf("%d ", i);
+   va_end(ap);
+   printf("\n");
+}
+
+int main(void){
+  print(5, 2, 14, 84, 97, 15, 24, 48, -1);
+  print(84, 51, -1);
+  print(-1);
+  print(1, -1);
+  return 0;
+}
+```
