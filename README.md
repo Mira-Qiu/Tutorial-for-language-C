@@ -105,6 +105,7 @@ int main(void){
   print(1, -1);
   return 0;
 }
+
 ```
 <strong> va_list ap</strong>:声明变量ap走过列参数。 The built-in type: va_list is silimar to pointer.<br>
 <strong> va_start(ap,arg)</strong>:使变量去指向第一个参数 makses the variable to point to the first argument.<br>
